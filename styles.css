@@ -60,6 +60,11 @@ body {
     flex-direction: column;
 }
 
+.call-to-action .internal {
+    justify-content: space-between;
+    align-items: center;
+}
+
 .footer .internal {
     justify-content: center;
     align-items: center;
@@ -76,6 +81,31 @@ ul {
     margin: 0px;
     gap: 12px;
 }
+
+.main .internal .left {
+    flex: 1;
+}
+
+.main .internal .right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-to-action .internal .left {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.call-to-action .internal .right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* li {
     margin-left: 12px;
