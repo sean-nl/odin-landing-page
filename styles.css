@@ -13,23 +13,73 @@ body {
     justify-content: center;
 }
 
-.header {
-    background-color: #1F2937;
-}
-
 .internal {
     display: flex;
     align-items: center;
-    width: 600px; /* temporary max width */
+    width: 800px; /* temporary max width */
+}
+
+.header {
+    background-color: #1F2937;
+    padding: 24px;
+}
+
+.main {
+    background-color: #1F2937;
+}
+
+.features {
+
+}
+
+.testimonial {
+    background-color: #E5E7EB;
+}
+
+.call-to-action {
+
+}
+
+.footer {
+    background-color: #1F2937;
 }
 
 .header .internal {
     justify-content: space-between;
 }
 
+.main .internal {
+
+}
+
+.features .internal {
+    flex-direction: column;
+}
+
+.testimonial .internal {
+    flex-direction: column;
+}
+
+.footer .internal {
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial .internal .quote-attribution {
+    align-self: flex-end;
+}
+
 ul {
     display: flex;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    gap: 12px;
 }
+
+/* li {
+    margin-left: 12px;
+} */
 
 a {
     font-size: 18px;
