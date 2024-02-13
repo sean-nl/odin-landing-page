@@ -1,5 +1,6 @@
 /* styles.css */
 
+/*is all this stuff necessary in body? I don't think so...*/
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: flex;
@@ -7,6 +8,10 @@ body {
     min-height: 100vh;
     margin: 0px;
     padding: 0px;
+}
+
+p {
+    margin: 0px;
 }
 
  .section {
@@ -19,6 +24,8 @@ body {
     display: flex;
     align-items: center;
     width: 800px; /* temporary max width */
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 /* allow non-footer containers to expand to fill page vertically if not enough content */
@@ -31,19 +38,25 @@ body {
 
 .header {
     background-color: #1F2937;
-    padding: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .main {
     background-color: #1F2937;
+    padding-top: 48px;
+    padding-bottom: 48px;
 }
 
 .features {
-
+    padding-top: 30px;
+    padding-bottom: 90px;
 }
 
 .testimonial {
     background-color: #E5E7EB;
+    padding-top: 48px;
+    padding-bottom: 48px;
 }
 
 .call-to-action {
@@ -59,7 +72,7 @@ body {
 }
 
 .main .internal {
-
+    gap: 8px;
 }
 
 .features .internal {
@@ -73,6 +86,17 @@ body {
 .call-to-action .internal {
     justify-content: space-between;
     align-items: center;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    border-radius: 16px;
+    color: white;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    gap: 8px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 24px;
+    margin-right: 24px;
 }
 
 .footer .internal {
@@ -80,7 +104,7 @@ body {
     align-items: center;
 }
 
-.testimonial .internal .quote-attribution {
+.testimonial .internal #quote-attribution {
     align-self: flex-end;
 }
 
@@ -88,8 +112,8 @@ ul {
     display: flex;
     list-style: none;
     padding: 0px;
-    margin: 0px;
-    gap: 12px;
+    margin: 0px 0px;
+    gap: 20px;
 }
 
 .main .internal .left {
@@ -97,6 +121,7 @@ ul {
 }
 
 .main .internal .right {
+    padding-right: 24px;
     flex: 1;
     display: flex;
     justify-content: center;
@@ -104,6 +129,7 @@ ul {
 }
 
 .call-to-action .internal .left {
+    padding-left: 24px;
     flex: 2;
     display: flex;
     flex-direction: column;
@@ -122,15 +148,19 @@ ul {
 } */
 
 a,
-.hero-secondary {
+.hero-secondary,
+#footer-text {
     font-size: 18px;
     color: #E5E7EB;
+    margin-top: 0px;
+    margin-bottom: 12px;
 }
 
 h1 {
     font-size: 48px;
     font-weight: extra-bold;
     color: #F9FAF8;
+    margin: 0px;
 }
 
 h2 {
@@ -145,6 +175,11 @@ h3 {
     margin: 0px;
 }
 
+h4 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
 button,
 .call-to-action .internal {
     background-color: #3882F6;
@@ -155,4 +190,67 @@ button,
     color: #1F2937;
     font-weight: 100;
     font-style: italic;
+    margin-bottom: 0px;
+}
+
+#hero-image {
+    align-self: stretch;
+    background-color: #F9FAF8;
+}
+
+#quote-attribution {
+    font-weight: 600;
+}
+
+/* this part I still don't understand... */
+.feature-list li {
+    display: flex;
+    /* flex: 1 1 154px; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.feature-list li p {
+    text-align: center;
+}
+
+.feature-img {
+    height: 150px;
+    width: 150px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #3882F6;
+    border-radius: 16px;
+ 
+}
+
+.feature-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* end of part I don't understand */
+
+button {
+
+    color: white;
+    font-weight: bold;
+    padding: 8px 32px;
+    text-align: center;
+    border-radius: 8px;
+    border-style: none;
+
+}
+
+#bottom-cta-button {
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+}
+
+#footer-text {
+    font-size: 16px;
+    margin: 24px;
 }
