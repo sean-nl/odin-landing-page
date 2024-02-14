@@ -23,9 +23,9 @@ button {
 }
 
 h1 {
+    color: #F9FAF8;
     font-size: 48px;
     font-weight: extra-bold;
-    color: #F9FAF8;
     margin: 0px;
 }
 
@@ -36,8 +36,8 @@ h2 {
 }
 
 h3 {
-    font-size: 24px;
     color: #F9FAF8;
+    font-size: 24px;
     margin: 0px;
 }
 
@@ -57,8 +57,8 @@ ul {
 a,
 .hero-secondary,
 #footer-text {
-    font-size: 18px;
     color: #E5E7EB;
+    font-size: 18px;
     margin-top: 0px;
     margin-bottom: 12px;
 }
